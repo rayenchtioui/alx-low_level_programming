@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <unistd.h>
 /*
  * _putchar follwed by a newline
  */
-int main(){
-	printf("_putchar)\n")
+int _putchar(char c){
+	return (write(1,&c,1));
 }
